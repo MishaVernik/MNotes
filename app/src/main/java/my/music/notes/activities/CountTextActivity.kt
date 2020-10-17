@@ -19,7 +19,7 @@ class CountTextActivity : AppCompatActivity() {
             // Get selected text from intent extra using the EXTRA_PROCESS_TEXT key
             // And returning an empty string if it's null.
             val selectedText = intent.getStringExtra(Intent.EXTRA_PROCESS_TEXT) ?: ""
-            Toast.makeText(this, "Selected Text has ${countWords(selectedText)} words", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Music name copied", Toast.LENGTH_LONG).show()
             writeToFile(selectedText + "\n", this)
             // Very important to end activity immediately if you're not display a layout
             finish()
